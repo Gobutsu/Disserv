@@ -1,0 +1,76 @@
+[
+    {
+        "name": "top.gg",
+        "type": "html",
+        "endpoint": "https://top.gg/servers/%s",
+        "selectors": {
+            "name": "h1.chakra-text"
+        }
+    },
+    {
+        "name": "discords.com",
+        "type": "json",
+        "endpoint": "https://discords.com/api-v2/servers/details/%s",
+        "fields": {
+            "name": "server.server.name"
+        }
+    },
+    {
+        "name": "discordservers.com",
+        "type": "json",
+        "endpoint": "https://search.discordservers.com/id/%s",
+        "fields": {
+            "name": "name"
+        }
+    },
+    {
+        "name": "dyno.gg",
+        "type": "json",
+        "endpoint": "https://listing.dyno.gg/serverlisting/server/%s",
+        "fields": {
+            "name": "name"
+        }
+    },
+    {
+        "name": "findadiscord.com",
+        "type": "json",
+        "endpoint": "https://findadiscord.com/api/v1/servers/info/%s",
+        "fields": {
+            "name": "info.name"
+        }
+    },
+    {
+        "name": "discard.cc",
+        "type": "html",
+        "endpoint": "https://discard.cc/guilds/%s",
+        "selectors": {
+            "name": ".profile-username p"
+        }
+    },
+    {
+        "name": "Mee6 Dashboard",
+        "type": "json",
+        "endpoint": "https://mee6.xyz/api/plugins/levels/leaderboard/%s?limit=10",
+        "fields": {
+            "name": "guild.name"
+        }
+    },
+    {
+        "name": "Statbot Dashboard",
+        "type": "json",
+        "endpoint": "https://proxy.statbot.net/dashboard/%s",
+        "page_url": "https://statbot.net/dashboard/%s/overview",
+        "fields": {
+            "name": "name"
+        }
+    },
+    {
+        "name": "Unbelievaboat Dashboard",
+        "type": "json",
+        "endpoint": "https://unbelievaboat.com/api/v1/guilds/%s",
+        "fields": {
+            "name": "name",
+            "owner_id": "owner_id"
+        }
+    }
+]

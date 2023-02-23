@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Dyno",
+        "endpoint": "https://dyno.gg/api/status/%s"
+    },
+    {
+        "name": "Koya",
+        "endpoint": "https://koya.gg/api/status/guild/%s"
+    }
+]
